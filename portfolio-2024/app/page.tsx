@@ -7,6 +7,7 @@ import img from './imgs/abstract.avif'
 import { SmallHeader } from "@/components/small-header";
 import { ListItem } from "@/components/list-item";
 import { HoverButton } from "@/components/hover-button";
+import { Footer } from "@/components/footer";
 
 
 
@@ -69,6 +70,7 @@ export default function Home() {
         </div>
       </div>
 
+      <Footer/>
     </>
   );
 }
