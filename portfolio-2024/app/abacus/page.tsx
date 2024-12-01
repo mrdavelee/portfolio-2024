@@ -94,7 +94,7 @@ export default function Home({ className, ...props }: CardProps) {
 
 
           {sites.map((site, index) => (
-            <Drawer>
+            <Drawer key="index">
               <DrawerTrigger asChild>
                 <Card key={index} className={cn("max-w-sm border-none overflow-hidden rounded-[40px] shadow-md cursor-pointer relative ", className)} {...props}>
                   <CardHeader>
