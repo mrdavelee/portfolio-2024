@@ -81,8 +81,8 @@ export default function Home({ className, ...props }: CardProps) {
   return (
     <>
     
-    <div className="upper-wrapper bg-zesty">
-        <header className=" w-3/4 mx-auto text-black flex justify-end py-14">
+    <div className="upper-wrapper bg-zesty pb-20">
+        <header className=" w-10/12 mx-auto text-black flex justify-end py-14">
 
           <Header />
         </header>
@@ -90,7 +90,7 @@ export default function Home({ className, ...props }: CardProps) {
         <div data-vaul-drawer-wrapper="">
         <Hero title="Ubiq Education"/>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16 mx-auto w-3/4">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16 mx-auto w-10/12">
 
 
           {sites.map((site, index) => (
@@ -119,7 +119,7 @@ export default function Home({ className, ...props }: CardProps) {
               
               <DrawerContent className="w-full mx-auto max-w-4xl pb-10">
 
-                <div className="w-3/4 mx-auto">
+                <div className="w-10/12 mx-auto">
 
                   <div className="mb-4 w-full items-start pb-4 last:mb-0 last:pb-0" >
                           

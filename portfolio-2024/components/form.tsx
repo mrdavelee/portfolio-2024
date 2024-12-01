@@ -20,22 +20,22 @@ export const Form = ({ ...restProps }: FormProps) => (
         <form {...restProps} >
 
             <Input
-                    className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    type="text" placeholder="Name" id="user_name" name="user_name" required/>
+                    className="shadow mb-4 appearance-none border rounded w-full py-4 px-3 text-lg text-gray-700 leading-tight border-none focus:outline-none focus:shadow-outline"
+                    type="text" placeholder="Name" id="from_name" name="from_name" required/>
 
             <Input
-                    className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="shadow mb-4 appearance-none border rounded w-full py-4 px-3 text-lg text-gray-700 leading-tight border-none focus:outline-none focus:shadow-outline"
                     type="email" placeholder="Email" id="email" name="email" required/>
 
            
 
             <textarea
-                    className="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="shadow mb-4 min-h-0 appearance-none border rounded h-64 text-lg w-full py-2 px-3 text-gray-700 border-none leading-tight focus:outline-none focus:shadow-outline"
                     placeholder="Type your message here..." id="message" name="message" required ></textarea>
 
-            <div className="flex justify-between">
+            <div className="flex justify-center">
                 <Input
-                    className="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    className="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 border-none w-40 rounded focus:outline-none focus:shadow-outline"
                     type="submit" value="Send ➤"/>
                 
             </div>

@@ -5,6 +5,10 @@ import type { FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 import Head from "next/head";
 import { Form } from "./form";
+import {
+    GoogleReCaptchaProvider, useGoogleReCaptcha
+} from 'react-google-recaptcha-v3';
+
 
 const ContactUs = () => {
   const form = useRef(null);
@@ -43,7 +47,12 @@ const ContactUs = () => {
         <meta name="description" content="Contact us to get in touch with us" />
       </Head>
       <main>
+      <GoogleReCaptchaProvider
+            reCaptchaKey={
+                process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? ''
+            }>
         <Form ref={form} onSubmit={sendEmail} />
+        </GoogleReCaptchaProvider>
       </main>
     </>
   );
