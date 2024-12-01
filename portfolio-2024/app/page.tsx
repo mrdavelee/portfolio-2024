@@ -2,9 +2,7 @@ import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import img from './imgs/abstract.avif'
 import { SmallHeader } from "@/components/small-header";
-import { ListItem } from "@/components/list-item";
 import { HoverButton } from "@/components/hover-button";
 import { Footer } from "@/components/footer";
 import Link from "next/link";

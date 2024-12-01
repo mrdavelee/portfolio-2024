@@ -6,7 +6,7 @@ import emailjs from "@emailjs/browser";
 import Head from "next/head";
 import { Form } from "./form";
 import {
-    GoogleReCaptchaProvider, useGoogleReCaptcha
+    GoogleReCaptchaProvider
 } from 'react-google-recaptcha-v3';
 
 
