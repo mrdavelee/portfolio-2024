@@ -14,7 +14,7 @@ on:
         type: string
 
 env:
-  DEPLOYMENT_FOLDER: portfolio-2024/
+  DEPLOYMENT_FOLDER: portfolio-2024
 
 jobs:
 # Please do not rename this job
