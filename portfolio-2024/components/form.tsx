@@ -1,11 +1,7 @@
 import type { DetailedHTMLProps, FormHTMLAttributes } from "react";
 import { Input } from "./ui/input";
 
-interface FormProps
-  extends DetailedHTMLProps<
-    FormHTMLAttributes<HTMLFormElement>,
-    HTMLFormElement
-  > {}
+type FormProps = DetailedHTMLProps< FormHTMLAttributes<HTMLFormElement>, HTMLFormElement> 
 
 export const Form = ({ ...restProps }: FormProps) => (
 
