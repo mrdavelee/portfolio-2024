@@ -10,7 +10,6 @@ import { HoverButton } from "@/components/hover-button";
 import { Footer } from "@/components/footer";
 
 
-
 export default function Home() {
   return (
     <>
