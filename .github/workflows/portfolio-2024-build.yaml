@@ -1,0 +1,50 @@
+# To better understand this file read this:
+# https://docs.ionos.space/docs/github-actions-customization/
+
+name: "Deploy Now: Execute Build"
+
+on:
+  workflow_call:
+    inputs:
+      site-url:
+        required: true
+        type: string
+      branch-id:
+        required: true
+        type: string
+
+env:
+  DEPLOYMENT_FOLDER: portfolio-2024
+
+jobs:
+# Please do not rename this job
+  build-project:
+    name: build portfolio-2024
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+
+      - name: Run script
+        env:
+          NEXT_PUBLIC_EMAILJS_APP_PUBLIC_KEY: NEXT_PUBLIC_EMAILJS_APP_PUBLIC_KEY = 'C0HynhZAiGl46CGDf'
+          NEXT_PUBLIC_EMAILJS_APP_SERVICE_ID: service_m99o0yo
+          NEXT_PUBLIC_EMAILJS_APP_TEMPLATE_ID: template_n6jav7b
+          NEXT_PUBLIC_RECAPTCHA_SITE_KEY: 6Lc4cY8qAAAAABcx-vkTVI15DxuCnepQTeFadbEb
+          RECAPTURE_SECRET_KEY: ${{ secrets.RECAPTURE_SECRET_KEY }}
+        run: next build
+
+# Please do not touch the following action
+      - name: Store deployment content
+        uses: ionos-deploy-now/artifact-action@v1
+        with:
+          api-key: ${{ secrets.IONOS_API_KEY }}
+          service-host: api-eu.ionos.space
+          project-id: 3079f45d-be5a-4320-a71b-9e1b577f092f
+          branch-id: ${{ inputs.branch-id }}
+          version: ${{ github.sha }}
+          folder: ${{ env.DEPLOYMENT_FOLDER }}
+          config-file: .deploy-now/portfolio-2024/config.yaml
+          action: upload
