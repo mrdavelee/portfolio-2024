@@ -11,7 +11,6 @@ import law from '../../public/img/law.png'
 import rw from '../../public/img/rw.png'
 import Image from "next/image";
  
-import { cn } from "@/lib/utils"
 import {
   Card,
   CardContent,
@@ -75,28 +74,25 @@ const sites = [
     
   ]
 
-  type CardProps = React.ComponentProps<typeof Card>
 
-export default function Home({ className, ...props }: CardProps) {
+export default function Home() {
   return (
-    <>
-    
     <div className="upper-wrapper bg-zesty pb-20">
-        <header className=" w-10/12 mx-auto text-black flex justify-end py-14">
+      <header className=" w-10/12 mx-auto text-black flex justify-end py-14">
 
-          <Header />
-        </header>
+        <Header />
+      </header>
 
-        <div data-vaul-drawer-wrapper="">
+      <div data-vaul-drawer-wrapper="">
         <Hero title="Ubiq Education"/>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16 mx-auto w-10/12">
 
 
           {sites.map((site, index) => (
-            <Drawer key="index">
+            <Drawer key={index}>
               <DrawerTrigger asChild>
-                <Card key={index} className={cn("max-w-sm border-none overflow-hidden rounded-[40px] shadow-md cursor-pointer relative ", className)} {...props}>
+                <Card className="max-w-sm border-none overflow-hidden rounded-[40px] shadow-md cursor-pointer relative ">
                   <CardHeader>
                     <Image className="shadow-lg" src={ site.img } alt={ site.title }/>
                   </CardHeader>
@@ -146,17 +142,14 @@ export default function Home({ className, ...props }: CardProps) {
             </Drawer>
 
 
-))}
-        </div>
+  ))}
+    </div>
 
 
         
       
       </div>
       
-      </div>
-      
-
-    </>
+    </div>
   );
 }

@@ -4,7 +4,6 @@ import { ArrowUp } from "lucide-react"
 import itchy from '../../public/img/itchy.png'
 import Image from "next/image";
  
-import { cn } from "@/lib/utils"
 import {
   Card,
   CardContent,
@@ -24,9 +23,8 @@ const sites = [
     },
   ]
 
-  type CardProps = React.ComponentProps<typeof Card>
 
-export default function Home({ className, ...props }: CardProps) {
+export default function Home() {
   return (
     <>
     
@@ -43,9 +41,9 @@ export default function Home({ className, ...props }: CardProps) {
 
 
           {sites.map((site, index) => (
-            <Drawer key="index">
+            <Drawer key={index}>
               <DrawerTrigger asChild>
-                <Card key={index} className={cn("max-w-sm border-none overflow-hidden rounded-[40px] shadow-md cursor-pointer relative ", className)} {...props}>
+                <Card  className="max-w-sm border-none overflow-hidden rounded-[40px] shadow-md cursor-pointer relative ">
                   <CardHeader>
                     <Image className="shadow-lg" src={ site.img } alt={ site.title }/>
                   </CardHeader>
