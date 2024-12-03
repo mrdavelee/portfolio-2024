@@ -8,7 +8,6 @@ import { Footer } from "@/components/footer";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 
-
 export default function Home() {
   return (
     <>
