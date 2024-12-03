@@ -4,6 +4,7 @@ import { ArrowUp } from "lucide-react"
 import itchy from '../../public/img/itchy.png'
 import Image from "next/image";
  
+
 import {
   Card,
   CardContent,
