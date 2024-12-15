@@ -84,7 +84,7 @@ export default function Home() {
       </header>
 
       <div data-vaul-drawer-wrapper="">
-        <Hero title="Ubiq Education"/>
+        <Hero title="Abacus e-Media" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16 mx-auto w-10/12">
 

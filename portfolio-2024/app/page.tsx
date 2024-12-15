@@ -18,7 +18,7 @@ export default function Home() {
           <Header />
         </header>
 
-        <Hero title="Digitise Ideas"/>
+        <Hero title="Digitise Ideas" para="I&apos;m a front-end developer with a passion for user interfaces. I have a strong background in building award-winning frontend experiences, Proficient in HTML5, CSS3, and JavaScript, I&apos;m always eager to learn new skills and stay on top of the latest technologies to ensure that every project I work on is the best it can be."/>
 
         <div className=" pb-5 w-10/12 mx-auto flex flex-col sm:flex-row gap-2 justify-center md:justify-start items-center mb-8">
           <Button variant="outline" title="Download my CV">
