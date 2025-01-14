@@ -43,7 +43,6 @@ const ContactUs = () => {
     <>
       <Head>
         <title>Contact Us</title>
-        <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Contact us to get in touch with us" />
       </Head>
       <main>
