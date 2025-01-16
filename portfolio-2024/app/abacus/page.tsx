@@ -25,49 +25,49 @@ const sites = [
     {
       title: "Boat International",
       description: "",
-      uri: 'https://www.itchypetawarenessmonth.com/',
+      uri: 'https://www.boatinternational.com/',
       img: boat
     },
     {
       title: "Building",
       description: "",
-      uri: 'https://www.itchypetawarenessmonth.com/',
+      uri: 'https://www.building.co.uk/',
       img: building
     },
     {
       title: "Chemistry World",
       description: "",
-      uri: 'https://www.itchypetawarenessmonth.com/',
+      uri: 'https://www.chemistryworld.com/',
       img: cw
     },
     {
       title: "Education in Chemistry",
       description: "",
-      uri: 'https://www.itchypetawarenessmonth.com/',
+      uri: 'https://edu.rsc.org/',
       img: eic
     },
     {
       title: "High Street Journal",
       description: "",
-      uri: 'https://www.itchypetawarenessmonth.com/',
+      uri: 'https://www.hsj.co.uk/',
       img: hsj
     },
     {
       title: "International Broadcasting Convention",
       description: "",
-      uri: 'https://www.itchypetawarenessmonth.com/',
+      uri: 'https://www.ibc.org/home',
       img: ibc
     },
     {
       title: "The Law Gazette",
       description: "",
-      uri: 'https://www.itchypetawarenessmonth.com/',
+      uri: 'https://www.lawgazette.co.uk/',
       img: law
     },
     {
       title: "Retail Week",
       description: "",
-      uri: 'https://www.itchypetawarenessmonth.com/',
+      uri: 'https://www.retail-week.com/',
       img: rw
     },
 
