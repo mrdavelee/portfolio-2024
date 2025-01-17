@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 import { SUSE } from "next/font/google";
 import "./globals.css";
@@ -23,11 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-               className={`${suse.className} antialiased`}
-
-      >
+      <body className={`${suse.className} antialiased`}>
         {children}
+        <GoogleAnalytics gaId="G-00WQPHM20S" />
+        
       </body>
     </html>
   );
