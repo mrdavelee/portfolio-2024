@@ -20,7 +20,7 @@ import { Drawer, DrawerContent, DrawerTitle, DrawerTrigger } from "@/components/
 const sites = [
     {
       title: "Star Wars Character search",
-      description: "As an example of my React and Next.js skills I created this functional DB search for Star Wars characters. ",
+      description: "As an example of my React and Next.js skills, I created this functional DB search for Star Wars characters. I have recently udated it due to the API changing its endpoint",
       uri: 'https://swapiexample.netlify.app/',
       img: wars
     },
