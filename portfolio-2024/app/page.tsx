@@ -28,15 +28,15 @@ export default function Home() {
           </Button>
 
           <Button variant="outline" title="Link to my Linkedin">
-            <Link className="flex items-center justify-between"  href="/https://www.linkedin.com/in/davidleedev/">
-            <Linkedin size={60} className="mr-2"/>
+            <Link target="_blank" className="flex items-center justify-between"  href="/https://www.linkedin.com/in/davidleedev/">
+            <Linkedin size={60} className="mr-2 rounded-sm"/>
               Linkedin
             </Link>
           </Button>
 
           <Button variant="outline" title="Link to my Github">
-            <Link className="flex items-center justify-between" href="https://github.com/mrdavelee">
-            <Github size={60} className="mr-2"/>
+            <Link target="_blank" className="flex items-center justify-between" href="https://github.com/mrdavelee">
+            <Github size={60} className="mr-2 rounded-sm"/>
               Github
             </Link>
           </Button>
