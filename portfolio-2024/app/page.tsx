@@ -3,10 +3,10 @@ import { Hero } from "@/components/hero";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { SmallHeader } from "@/components/small-header";
-import { HoverButton } from "@/components/hover-button";
 import { Footer } from "@/components/footer";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
+import { Github, Linkedin } from "lucide-react";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
           <Header />
         </header>
 
-        <Hero title="Let's Create something" para="I&apos;m a front-end developer with a passion for user interfaces. I have a strong background in building award-winning frontend experiences, Proficient in HTML5, CSS3, and JavaScript, I&apos;m always eager to learn new skills and stay on top of the latest technologies to ensure that every project I work on is the best it can be."/>
+        <Hero title="Let's Create" para="I&apos;m a front-end developer with a passion for user interfaces. I have a strong background in building award-winning frontend experiences, Proficient in HTML5, CSS3, and JavaScript, I&apos;m always eager to learn new skills and stay on top of the latest technologies to ensure that every project I work on is the best it can be."/>
 
         <div className=" pb-5 w-10/12 mx-auto flex flex-col sm:flex-row gap-2 justify-center md:justify-start items-center mb-8">
           <Button variant="outline" title="Download my CV">
@@ -27,13 +27,26 @@ export default function Home() {
             </Link>
           </Button>
 
-          <HoverButton title="Frontend Developer crafting innovative web solutions at UBIQ" link="https://www.linkedin.com/in/davidleedev/" buttonTitle="Open to Work - hover me" />
+          <Button variant="outline" title="Link to my Linkedin">
+            <Link className="flex items-center justify-between"  href="/https://www.linkedin.com/in/davidleedev/">
+            <Linkedin size={60} className="mr-2"/>
+              Linkedin
+            </Link>
+          </Button>
+
+          <Button variant="outline" title="Link to my Github">
+            <Link className="flex items-center justify-between" href="https://github.com/mrdavelee">
+            <Github size={60} className="mr-2"/>
+              Github
+            </Link>
+          </Button>
+
           <span className="hidden md:block w-full h-0.5 bg-zestHighlight"/>
           
         </div>
 
         <div className="w-10/12 mx-auto pb-10">
-          <h2 className="text-offBlack uppercase text-[5rem] tracking-tighter font-black mb-10">
+          <h2 className="pb-5 mb-10 tracking-tighter text-[3rem] sm:text-[5rem] md:text[7rem] xl:text-[10rem] text-center sm:text-left leading-[.8] font-black uppercase text-black">
           My Past Work
           </h2>
 
@@ -75,11 +88,15 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-4 items-center justify-center">
               <Badge variant='zesty'>Development</Badge>
-              <Badge variant='zesty'>SEO</Badge>
-              <Badge variant='zesty'>Marketing</Badge>
               <Badge variant='zesty'>JavaScript</Badge>
               <Badge variant='zesty'>CSS</Badge>
               <Badge variant='zesty'>HTML</Badge>
+              <Badge variant='zesty'>Git</Badge>
+              <Badge variant='zesty'>SCSS</Badge>
+              <Badge variant='zesty'>React</Badge>
+              <Badge variant='zesty'>JQuery</Badge>
+              <Badge variant='zesty'>NextJS</Badge>
+              <Badge variant='zesty'>Tailwind</Badge>
             </div>
           </div>
 
