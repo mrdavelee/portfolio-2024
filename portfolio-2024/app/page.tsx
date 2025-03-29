@@ -13,7 +13,7 @@ export default function Home() {
     <>
     
       <div className="upper-wrapper bg-zesty">
-        <header className=" w-10/12 mx-auto text-black flex justify-center sm:justify-end py-14">
+        <header className=" w-10/12 mx-auto text-black flex justify-end py-14">
 
           <Header />
         </header>
@@ -29,6 +29,7 @@ export default function Home() {
 
           <HoverButton title="Frontend Developer crafting innovative web solutions at UBIQ" link="https://www.linkedin.com/in/davidleedev/" buttonTitle="Open to Work - hover me" />
           <span className="hidden md:block w-full h-0.5 bg-zestHighlight"/>
+          
         </div>
 
         <div className="w-10/12 mx-auto pb-10">
